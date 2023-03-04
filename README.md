@@ -17,3 +17,8 @@ All code will be written in the src folder.
 - [ImageDataGenerator tutorial flow function - SO](https://stackoverflow.com/questions/57185851/correct-usage-of-imagedatagenerator-flow-function)
 
 
+## Related papers' repositories
+
+- [74 - Object Detection for Graphical User Interface: Old Fashioned or Deep Learning or a Combination?](https://github.com/chenjshnn/Object-Detection-for-Graphical-User-Interface)
+  (CenterNet, Faster-RCNN, YOLOv3, Xianyu)
+- [CenterNet v2](https://github.com/xingyizhou/CenterNet2)
