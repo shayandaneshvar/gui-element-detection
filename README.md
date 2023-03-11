@@ -39,14 +39,4 @@ All code will be written in the src folder.
 
 #### Report
 - cleaned the data and transform xml to txt (yolo5_format folder) -> See data_cleaning file
-- created yolo5_full folder containing all images and yolo5_format files
-- to make yolo work, created dataset folder with the following structure:
-- ├── dataset.yaml
-  ├── images
-  │   ├── train
-  │   ├── validation
-  │   └── test
-  └── labels
-      ├── train
-      ├── validation
-      └── test
+- see readme.md in yolo directory
