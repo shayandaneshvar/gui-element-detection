@@ -34,3 +34,4 @@ All code will be written in the src folder.
 - RICO -> 72 and 74 : This dataset (android only) is pretty much crap, so much preprocessing is required to make it work, and other authors who used it did not publish their preprocessed dataset 
 - Image2emmet: very small dataset, both for web and android
 - [The ReDraw Dataset](https://zenodo.org/record/2530277#.ZAQ5mXbMJ3g)
+- [VINS Dataset](https://github.com/sbunian/VINS)
