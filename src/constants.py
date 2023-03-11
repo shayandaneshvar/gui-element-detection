@@ -1,7 +1,11 @@
 import glob
 
 # project constants
+TRAIN_SPLIT_RATIO = 0.8
+VALIDATION_SPLIT_RATIO = 0.1
+TEST_SPLIT_RATIO = 0.1
 
+# Paths
 VINS_DATASET_PATH = 'E:/Research/course research projects/data-driven software engineering/datasets/All Dataset/'
 
 VINS_ANDROID = f"{VINS_DATASET_PATH}Android"
@@ -16,6 +20,15 @@ VINS_MERGED = f"{VINS_DATASET_PATH}Merged"
 VINS_MERGED_IMAGES = f"{VINS_MERGED}/images/"
 VINS_MERGED_ANNOTATIONS = f"{VINS_MERGED}/annotations/"
 VINS_MERGED_YOLO = f"{VINS_MERGED}/yolo5_format/"
+
+VINS_MERGED_YOLO_FULL = f"{VINS_MERGED}/yolo5_full/"
+VINS_MERGED_YOLO_SPLITS = f"{VINS_MERGED}/dataset/"
+VINS_MERGED_YOLO_SPLIT_VAL_IMAGES = f"{VINS_MERGED_YOLO_SPLITS}images/validation/"
+VINS_MERGED_YOLO_SPLIT_TRAIN_IMAGES = f"{VINS_MERGED_YOLO_SPLITS}images/train/"
+VINS_MERGED_YOLO_SPLIT_TEST_IMAGES = f"{VINS_MERGED_YOLO_SPLITS}images/test/"
+VINS_MERGED_YOLO_SPLIT_VAL_LABELS = f"{VINS_MERGED_YOLO_SPLITS}labels/validation/"
+VINS_MERGED_YOLO_SPLIT_TRAIN_LABELS = f"{VINS_MERGED_YOLO_SPLITS}labels/train/"
+VINS_MERGED_YOLO_SPLIT_TEST_LABELS = f"{VINS_MERGED_YOLO_SPLITS}labels/test/"
 # EditText -> InputField
 # CheckedTextView -> CheckedView
 # Drawer -> Sliding Menu
@@ -39,6 +52,8 @@ def reset_classes_counts():
 
 
 # Final Count:
+# 'BackgroundImage': 623, 'CheckedTextView': 886, 'Icon': 11248, 'EditText': 2429, 'Image': 8265, 'Text': 29324,
+# 'TextButton': 4794, 'Drawer': 248, 'PageIndicator': 1406, 'UpperTaskBar': 3786, 'Modal': 318, 'Switch': 231
 
 # YOLOv5 Format per line:
 # (class x_center y_center width height) classes start from 0, the rest are normalized

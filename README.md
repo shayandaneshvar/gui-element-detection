@@ -35,3 +35,18 @@ All code will be written in the src folder.
 - Image2emmet: very small dataset, both for web and android
 - [The ReDraw Dataset](https://zenodo.org/record/2530277#.ZAQ5mXbMJ3g)
 - [VINS Dataset](https://github.com/sbunian/VINS)
+
+
+#### Report
+- cleaned the data and transform xml to txt (yolo5_format folder) -> See data_cleaning file
+- created yolo5_full folder containing all images and yolo5_format files
+- to make yolo work, created dataset folder with the following structure:
+- ├── dataset.yaml
+  ├── images
+  │   ├── train
+  │   ├── validation
+  │   └── test
+  └── labels
+      ├── train
+      ├── validation
+      └── test
