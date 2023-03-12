@@ -33,4 +33,5 @@
     names: ['BackgroundImage', 'CheckedTextView', 'Icon', 'EditText', 'Image', 'Text', 'TextButton', 'Drawer', 'PageIndicator', 'UpperTaskBar', 'Modal', 'Switch']
 
 - Ran initial YOLOv5 sections to populate the folders, and be ready for YOLOv5
-- Copy dataset.yaml to yolov5 cloned folder
+- Copy dataset.yaml to yolov5 cloned folder, and update the directories accordingly
+- Run the model for 2 and 100 epochs
