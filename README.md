@@ -40,3 +40,6 @@ All code will be written in the src folder.
 #### Report
 - cleaned the data and transform xml to txt (yolo5_format folder) -> See data_cleaning file
 - see readme.md in yolo directory
+
+## Metrics
+- [https://medium.com/@vijayshankerdubey550/evaluation-metrics-for-object-detection-algorithms-b0d6489879f3](https://medium.com/@vijayshankerdubey550/evaluation-metrics-for-object-detection-algorithms-b0d6489879f3)

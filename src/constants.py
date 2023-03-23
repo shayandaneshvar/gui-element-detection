@@ -59,6 +59,7 @@ def reset_classes_counts():
 # (class x_center y_center width height) classes start from 0, the rest are normalized
 
 if __name__ == '__main__':
+    print(VINS_MERGED_YOLO_SPLIT_TEST_IMAGES )
     images = glob.glob(VINS_MERGED_IMAGES + '*.jpg')
     annotations = glob.glob(VINS_MERGED_ANNOTATIONS + '*.xml')
     print(len(images))

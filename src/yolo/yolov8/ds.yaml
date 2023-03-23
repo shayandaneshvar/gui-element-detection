@@ -1,0 +1,11 @@
+# This is just a sample, the actual one is placed near the dataset and that should be given to the train.py
+# train, val, test
+train: E:/Research/course research projects/data-driven software engineering/datasets/All Dataset/Merged/dataset/images/train
+val: E:/Research/course research projects/data-driven software engineering/datasets/All Dataset/Merged/dataset/images/validation
+test: E:/Research/course research projects/data-driven software engineering/datasets/All Dataset/Merged/dataset/images/test
+# 12 classes
+nc: 12
+
+# class names
+names: ['BackgroundImage', 'CheckedTextView', 'Icon', 'EditText', 'Image', 'Text', 'TextButton', 'Drawer', 'PageIndicator', 'UpperTaskBar', 'Modal', 'Switch']
+#{'BackgroundImage': 0, 'CheckedTextView': 1, 'Icon': 2, 'EditText': 3, 'Image': 4, 'Text': 5, 'TextButton': 6, 'Drawer': 7, 'PageIndicator': 8,'UpperTaskBar': 9, 'Modal': 10, 'Switch': 11}
