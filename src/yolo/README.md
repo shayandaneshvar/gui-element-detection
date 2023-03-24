@@ -52,3 +52,12 @@
   - YOLOv8 paper will be out after they take care of some fancy deployment capability with some other platforms, so not soon!
 
 ### YOLOv7
+- clone the repo
+- create train, test, validation txt files with full address of images (Not sure if required!?) 
+  - Update: no it is not required, the given path on the dataset yml file can do both 
+  - Update2: Actually the normal way does not work, so the address images is given
+- create custom.yaml in data folder of yolov7 same as yolov5
+- create yolov7_custom yaml same as original but updated the classes to 12 classes
+- download Yolov7.pt weights from https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt and place in yolov7 cloned repo
+- Details of how to run: https://machinelearningprojects.net/train-yolov7-on-the-custom-dataset/
+- 
