@@ -88,7 +88,7 @@ def load_labels_as_masks(split: Splits, path=None, shape=(416, 416)):
     return np.array(labels_mask)  # of shape (items,(shape), classes + 1 bg)
 
 
-class DataGenerator(Sequence):
+class LazyDataLoader(Sequence):
     def __init__(self, split: Splits, images_path, labels_path, batch_size, n_classes=13, resize=True,
                  shape=(416, 416), normalize=True):
         self.image_path = glob(os.path.join(images_path, split.get_path()) + "*.jpg")
@@ -102,12 +102,11 @@ class DataGenerator(Sequence):
         self.shape = shape
         self.normalize = True
 
+    # def __check_index__(self):
+    #     return self.index
 
-    def __check_index__(self):
-        return self.index
-
-    def __update_index__(self):
-        self.index = self.index + self.batch_size
+    # def __update_index__(self):
+    #     self.index = self.index + self.batch_size
 
     # Steps per epoch
     def __len__(self):
@@ -128,9 +127,9 @@ class DataGenerator(Sequence):
         self.image_path[:], self.mask_path[:] = zip(*combined)
 
     # Generates data, feeds to training
-    def __getitem__(self):
+    def __getitem__(self, index):
 
-        index = self.__check_index__()
+        # index = self.__check_index__()
 
         start = index * self.batch_size
         end = (index + 1) * self.batch_size
