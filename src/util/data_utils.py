@@ -83,17 +83,16 @@ def load_labels_as_masks(split: Splits, path=None, shape=(416, 416)):
         # cv2.imshow("sd", mask/1.0)
         # cv2.waitKey()
 
-    return labels_mask
+    return np.array(labels_mask) # of shape (items,(shape), classes + 1 bg)
 
 
 if __name__ == '__main__':
     print("This should be used for testing only!")
-    # import sys
-
-    # sys.path.insert(1, 'E:/Research/course research projects/data-driven software engineering/gui-element-detection/src')
-    # from constants import VINS_MERGED_YOLO_SPLITS_LABELS as ds_y_path
+    import sys
+    sys.path.insert(1, 'E:/Research/course research projects/data-driven software engineering/gui-element-detection/src')
+    from constants import VINS_MERGED_YOLO_SPLITS_LABELS as ds_y_path
 
     # print(ds_path)
     # print(len(load_data(Splits.TRAIN, ds_path,resize=True, shape=())))
     # print(os.path.join(ds_path, 'train/'))
-    # load_labels_as_masks(split=Splits.TRAIN, path=ds_y_path)
+    load_labels_as_masks(split=Splits.TRAIN, path=ds_y_path)
