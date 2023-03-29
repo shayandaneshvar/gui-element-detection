@@ -22,6 +22,25 @@ class Splits(Enum):
             return 'validation/'
 
 
+def merge_bounding_boxes(arrays,classes=13):
+    items = arrays.shape[0] if len(arrays.shape) == 4 else 1
+    merged = []
+    for i in range(items):
+        if items == 1:
+            current = arrays
+        else:
+            current = arrays[i,]
+
+        current = current * np.array([[np.arange(classes)]])
+        merged.append(np.max(current, axis=2, out=None))
+
+    merged = np.array(merged)
+    if items == 1:
+        return merged[0]
+    else:
+        return merged
+
+
 def load_data(split: Splits, path=None, resize=False, shape=(416, 416), normalize=True):
     """
     :param split:
@@ -232,8 +251,6 @@ class LazyDataLoaderV2(LazyDataLoader):
 
         batch_x = np.array(images).astype('float32')
         batch_y = to_categorical(np.array(labels_masks).astype('float32'), num_classes=self.n_classes)
-        print(batch_x.shape)
-        print(batch_y.shape)
         return (batch_x, batch_y)
 
 
