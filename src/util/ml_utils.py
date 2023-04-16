@@ -4,7 +4,7 @@ from sklearn import metrics
 from sklearn.model_selection import StratifiedKFold, cross_val_score, KFold
 from sklearn.preprocessing import LabelEncoder
 from imblearn.over_sampling import RandomOverSampler, SMOTE, ADASYN
-
+from xgboost import XGBRFRegressor, XGBRegressor
 
 def k_fold_cross_val(model, X_all, y_all, k=10, up_sample_training=False,
                     up_sampler=lambda: ADASYN(random_state=42, n_neighbors=3), random_state=42, shuffle=True,
