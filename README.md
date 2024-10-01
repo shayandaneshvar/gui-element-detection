@@ -30,3 +30,15 @@
 
 ## Metrics
 - [https://medium.com/@vijayshankerdubey550/evaluation-metrics-for-object-detection-algorithms-b0d6489879f3](https://medium.com/@vijayshankerdubey550/evaluation-metrics-for-object-detection-algorithms-b0d6489879f3)
+
+## Citation
+
+@misc{daneshvar2024guielementdetectionusing,
+      title={GUI Element Detection Using SOTA YOLO Deep Learning Models}, 
+      author={Seyed Shayan Daneshvar and Shaowei Wang},
+      year={2024},
+      eprint={2408.03507},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2408.03507}, 
+}
