@@ -2,6 +2,8 @@
 
 [Link to the paper](https://arxiv.org/abs/2408.03507)
 
+[VINS Dataset](https://github.com/sbunian/VINS)
+
 ## Related papers' repositories
 
 - [74 - Object Detection for Graphical User Interface: Old Fashioned or Deep Learning or a Combination?](https://github.com/chenjshnn/Object-Detection-for-Graphical-User-Interface)
